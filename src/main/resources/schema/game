@@ -1,0 +1,715 @@
+{
+    "javaType": "model.Game",
+    "properties": {
+        "data": {
+            "id": "data",
+            "properties": {
+                "about_the_game": {
+                    "id": "about_the_game",
+                    "type": "string"
+                },
+                "achievements": {
+                    "id": "achievements",
+                    "properties": {
+                        "total": {
+                            "id": "total",
+                            "type": "integer"
+                        }
+                    },
+                    "type": "object"
+                },
+                "background": {
+                    "id": "background",
+                    "type": "string"
+                },
+                "categories": {
+                    "id": "categories",
+                    "items": [
+                        {
+                            "id": "0",
+                            "properties": {
+                                "description": {
+                                    "id": "description",
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "1",
+                            "properties": {
+                                "description": {
+                                    "id": "description",
+                                    "type": "string"
+                                },
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    ],
+                    "type": "array"
+                },
+                "detailed_description": {
+                    "id": "detailed_description",
+                    "type": "string"
+                },
+                "developers": {
+                    "id": "developers",
+                    "items": {
+                        "id": "0",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "genres": {
+                    "id": "genres",
+                    "items": {
+                        "id": "0",
+                        "properties": {
+                            "description": {
+                                "id": "description",
+                                "type": "string"
+                            },
+                            "id": {
+                                "id": "id",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "header_image": {
+                    "id": "header_image",
+                    "type": "string"
+                },
+                "is_free": {
+                    "id": "is_free",
+                    "type": "boolean"
+                },
+                "mac_requirements": {
+                    "id": "mac_requirements",
+                    "properties": {
+                        "minimum": {
+                            "id": "minimum",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "metacritic": {
+                    "id": "metacritic",
+                    "properties": {
+                        "score": {
+                            "id": "score",
+                            "type": "integer"
+                        },
+                        "url": {
+                            "id": "url",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "name": {
+                    "id": "name",
+                    "type": "string"
+                },
+                "package_groups": {
+                    "id": "package_groups",
+                    "items": {
+                        "id": "0",
+                        "properties": {
+                            "description": {
+                                "id": "description",
+                                "type": "string"
+                            },
+                            "display_type": {
+                                "id": "display_type",
+                                "type": "integer"
+                            },
+                            "is_recurring_subscription": {
+                                "id": "is_recurring_subscription",
+                                "type": "string"
+                            },
+                            "name": {
+                                "id": "name",
+                                "type": "string"
+                            },
+                            "save_text": {
+                                "id": "save_text",
+                                "type": "string"
+                            },
+                            "selection_text": {
+                                "id": "selection_text",
+                                "type": "string"
+                            },
+                            "subs": {
+                                "id": "subs",
+                                "items": [
+                                    {
+                                        "id": "0",
+                                        "properties": {
+                                            "can_get_free_license": {
+                                                "id": "can_get_free_license",
+                                                "type": "string"
+                                            },
+                                            "is_free_license": {
+                                                "id": "is_free_license",
+                                                "type": "boolean"
+                                            },
+                                            "option_description": {
+                                                "id": "option_description",
+                                                "type": "string"
+                                            },
+                                            "option_text": {
+                                                "id": "option_text",
+                                                "type": "string"
+                                            },
+                                            "packageid": {
+                                                "id": "packageid",
+                                                "type": "string"
+                                            },
+                                            "percent_savings": {
+                                                "id": "percent_savings",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings_text": {
+                                                "id": "percent_savings_text",
+                                                "type": "string"
+                                            },
+                                            "price_in_cents_with_discount": {
+                                                "id": "price_in_cents_with_discount",
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "id": "1",
+                                        "properties": {
+                                            "can_get_free_license": {
+                                                "id": "can_get_free_license",
+                                                "type": "string"
+                                            },
+                                            "is_free_license": {
+                                                "id": "is_free_license",
+                                                "type": "boolean"
+                                            },
+                                            "option_description": {
+                                                "id": "option_description",
+                                                "type": "string"
+                                            },
+                                            "option_text": {
+                                                "id": "option_text",
+                                                "type": "string"
+                                            },
+                                            "packageid": {
+                                                "id": "packageid",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings": {
+                                                "id": "percent_savings",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings_text": {
+                                                "id": "percent_savings_text",
+                                                "type": "string"
+                                            },
+                                            "price_in_cents_with_discount": {
+                                                "id": "price_in_cents_with_discount",
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "id": "2",
+                                        "properties": {
+                                            "can_get_free_license": {
+                                                "id": "can_get_free_license",
+                                                "type": "string"
+                                            },
+                                            "is_free_license": {
+                                                "id": "is_free_license",
+                                                "type": "boolean"
+                                            },
+                                            "option_description": {
+                                                "id": "option_description",
+                                                "type": "string"
+                                            },
+                                            "option_text": {
+                                                "id": "option_text",
+                                                "type": "string"
+                                            },
+                                            "packageid": {
+                                                "id": "packageid",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings": {
+                                                "id": "percent_savings",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings_text": {
+                                                "id": "percent_savings_text",
+                                                "type": "string"
+                                            },
+                                            "price_in_cents_with_discount": {
+                                                "id": "price_in_cents_with_discount",
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    },
+                                    {
+                                        "id": "3",
+                                        "properties": {
+                                            "can_get_free_license": {
+                                                "id": "can_get_free_license",
+                                                "type": "string"
+                                            },
+                                            "is_free_license": {
+                                                "id": "is_free_license",
+                                                "type": "boolean"
+                                            },
+                                            "option_description": {
+                                                "id": "option_description",
+                                                "type": "string"
+                                            },
+                                            "option_text": {
+                                                "id": "option_text",
+                                                "type": "string"
+                                            },
+                                            "packageid": {
+                                                "id": "packageid",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings": {
+                                                "id": "percent_savings",
+                                                "type": "integer"
+                                            },
+                                            "percent_savings_text": {
+                                                "id": "percent_savings_text",
+                                                "type": "string"
+                                            },
+                                            "price_in_cents_with_discount": {
+                                                "id": "price_in_cents_with_discount",
+                                                "type": "integer"
+                                            }
+                                        },
+                                        "type": "object"
+                                    }
+                                ],
+                                "type": "array"
+                            },
+                            "title": {
+                                "id": "title",
+                                "type": "string"
+                            }
+                        },
+                        "type": "object"
+                    },
+                    "type": "array"
+                },
+                "packages": {
+                    "id": "packages",
+                    "items": [
+                        {
+                            "id": "0",
+                            "type": "string"
+                        },
+                        {
+                            "id": "1",
+                            "type": "integer"
+                        },
+                        {
+                            "id": "2",
+                            "type": "integer"
+                        },
+                        {
+                            "id": "3",
+                            "type": "integer"
+                        }
+                    ],
+                    "type": "array"
+                },
+                "pc_requirements": {
+                    "id": "pc_requirements",
+                    "properties": {
+                        "minimum": {
+                            "id": "minimum",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "platforms": {
+                    "id": "platforms",
+                    "properties": {
+                        "linux": {
+                            "id": "linux",
+                            "type": "boolean"
+                        },
+                        "mac": {
+                            "id": "mac",
+                            "type": "boolean"
+                        },
+                        "windows": {
+                            "id": "windows",
+                            "type": "boolean"
+                        }
+                    },
+                    "type": "object"
+                },
+                "price_overview": {
+                    "id": "price_overview",
+                    "properties": {
+                        "currency": {
+                            "id": "currency",
+                            "type": "string"
+                        },
+                        "discount_percent": {
+                            "id": "discount_percent",
+                            "type": "integer"
+                        },
+                        "final": {
+                            "id": "final",
+                            "type": "integer"
+                        },
+                        "initial": {
+                            "id": "initial",
+                            "type": "integer"
+                        }
+                    },
+                    "type": "object"
+                },
+                "publishers": {
+                    "id": "publishers",
+                    "items": {
+                        "id": "0",
+                        "type": "string"
+                    },
+                    "type": "array"
+                },
+                "recommendations": {
+                    "id": "recommendations",
+                    "properties": {
+                        "total": {
+                            "id": "total",
+                            "type": "integer"
+                        }
+                    },
+                    "type": "object"
+                },
+                "release_date": {
+                    "id": "release_date",
+                    "properties": {
+                        "coming_soon": {
+                            "id": "coming_soon",
+                            "type": "boolean"
+                        },
+                        "date": {
+                            "id": "date",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "required_age": {
+                    "id": "required_age",
+                    "type": "integer"
+                },
+                "screenshots": {
+                    "id": "screenshots",
+                    "items": [
+                        {
+                            "id": "0",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "1",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "2",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "3",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "4",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "5",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "6",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "7",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "8",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "9",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "10",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "11",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        },
+                        {
+                            "id": "12",
+                            "properties": {
+                                "id": {
+                                    "id": "id",
+                                    "type": "integer"
+                                },
+                                "path_full": {
+                                    "id": "path_full",
+                                    "type": "string"
+                                },
+                                "path_thumbnail": {
+                                    "id": "path_thumbnail",
+                                    "type": "string"
+                                }
+                            },
+                            "type": "object"
+                        }
+                    ],
+                    "type": "array"
+                },
+                "steam_appid": {
+                    "id": "steam_appid",
+                    "type": "integer"
+                },
+                "support_info": {
+                    "id": "support_info",
+                    "properties": {
+                        "email": {
+                            "id": "email",
+                            "type": "string"
+                        },
+                        "url": {
+                            "id": "url",
+                            "type": "string"
+                        }
+                    },
+                    "type": "object"
+                },
+                "supported_languages": {
+                    "id": "supported_languages",
+                    "type": "string"
+                },
+                "type": {
+                    "id": "type",
+                    "type": "string"
+                },
+                "website": {
+                    "id": "website",
+                    "type": "null"
+                }
+            },
+            "type": "object"
+        },
+        "success": {
+            "id": "success",
+            "type": "boolean"
+        }
+    },
+    "required": [
+        "success",
+        "data",
+        "id",
+        "path_thumbnail",
+        "path_full"
+    ],
+    "type": "object"
+}
